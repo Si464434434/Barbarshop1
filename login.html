@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barber Shop</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>BARBER SHOP</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#booking">Book Now</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Barber Shop</h2>
+    <p>Where Style Meets Precision</p>
+    <a href="#booking" class="btn">Book Your Cut</a>
+  </section>
+
+  <section id="services" class="services">
+    <h3>Our Services</h3>
+    <div class="grid">
+      <div class="card">✂️ Haircut<br>₹55</div>
+      <div class="card">🧔 Beard Trim<br>₹100</div>
+      <div class="card">🪒 Shave<br>₹120</div>
+      <div class="card">🧼 Head Shave<br>50</div>
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <h3>Book an Appointment</h3>
+    <form onsubmit="return confirmBooking()">
+      <input type="text" placeholder="Your Name" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <select id="serviceSelect" required>
+        <option value="">Select Service</option>
+        <option>Haircut</option>
+        <option>Beard Trim</option>
+        <option>Shave</option>
+        <option>Head Shave</option>
+      </select>
+      <input type="date" required />
+      <input type="time" required />
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h3>Style Gallery</h3>
+    <div class="grid">
+      <img src="50+ Best Short Hairc.png" alt="Style 1" />
+      <img src="Top 25 Men's Hairsty.png" alt="Style 2" />
+       <img src="14 Trendy Hairstyles.png" alt="Style 4" />
+      <img src="2d340786ab3bb9d65dd2e3e953b898c2.jpg" alt="Style 3" />
+      <img src="The Ultimate Short H.png" alt="Style 5" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p>📍 Dewas, MP<br>📞 +91-9876543210<br>🕒 Mon–Sat: 10am–8pm</p>
+    <a href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20book%20a%20haircut" class="btn">Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Barber Shop | Crafted with style in India</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">💬</a>
+</body>
+</html>
